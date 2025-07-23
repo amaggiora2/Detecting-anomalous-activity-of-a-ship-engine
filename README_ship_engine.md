@@ -21,6 +21,7 @@
 
 - Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection:
 ![histogram](images/histogram_ship.png)
+
 ![boxplot](images/boxplot.png)
 
 
