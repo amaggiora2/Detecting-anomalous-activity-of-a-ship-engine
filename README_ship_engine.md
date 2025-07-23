@@ -19,7 +19,11 @@
 
 - Calculated 95th percentiles for fuel pressure (12.21) and lubrication oil temperature (84.94), with roughly 977 data points beyond these values for each.
 
-- Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection.
+- Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection:
+![histogram](images/histogram_ship.png)
+![boxplot](images/boxplot.png)
+
+
 
 ## 2. Interquartile Range (IQR) Analysis
 
@@ -38,6 +42,30 @@
 - Performed PCA to reduce features to 2D for visualization.
 - Model is flexible and less dependent on strict statistical assumptions.
 - PCA scatterplot shows a dense cluster with outliers lying outside.
+# Detecting Anomalous Activity of a Ship Engine
+
+## 1. Exploratory Data Analysis (EDA)
+
+- Dataset: 19,535 entries, 6 features related to ship engine performance:
+  - Engine rpm
+  - Lubrication oil pressure
+  - Fuel pressure
+  - Coolant pressure
+  - Lubrication oil temperature
+  - Coolant temperature
+
+- Data quality: No missing values or duplicates.
+
+- Initial observations:
+  - Features show high variability.
+  - Some distributions are skewed with outliers, e.g., fuel pressure.
+  - Suggests anomalies may be better detected by considering feature interactions rather than individual thresholds.
+
+- Calculated 95th percentiles for fuel pressure (12.21) and lubrication oil temperature (84.94), with roughly 977 data points beyond these values for each.
+
+- Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection:
+![PCA_SVM](images/PCA_SVM.png)
+
 
 ## 4. Isolation Forest
 
@@ -47,6 +75,7 @@
 - Added anomaly flags back to the dataset, verified that 2.5% were detected as anomalies.
 - PCA visualization showed one normal point far from the cluster, suggesting further investigation.
 - Advantage: requires only expected anomaly fraction, easy to implement.
+![PCA_IsoF](images/PCA_IsoForest.png)
 
 ## 5. Conclusions and Reflections
 
