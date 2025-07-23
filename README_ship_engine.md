@@ -19,10 +19,12 @@
 
 - Calculated 95th percentiles for fuel pressure (12.21) and lubrication oil temperature (84.94), with roughly 977 data points beyond these values for each.
 
-- Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection:
-Histograms:
+- Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection.
+
+### Histogram Distributions
 <img src="images/histogram_ship.png" alt="Histogram" width="80%" />
-Boxplots:
+
+### Boxplots of Features
 <img src="images/boxplot_ship.png" alt="Boxplot" width="80%" />
 
 
