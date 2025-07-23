@@ -20,9 +20,10 @@
 - Calculated 95th percentiles for fuel pressure (12.21) and lubrication oil temperature (84.94), with roughly 977 data points beyond these values for each.
 
 - Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection:
+Histograms:
 <img src="images/histogram_ship.png" alt="Histogram" width="80%" />
-
-<img src="images/boxplot.png" alt="Boxplot" width="80%" />
+Boxplots:
+<img src="images/boxplot_ship.png" alt="Boxplot" width="80%" />
 
 
 
@@ -65,7 +66,7 @@
 - Calculated 95th percentiles for fuel pressure (12.21) and lubrication oil temperature (84.94), with roughly 977 data points beyond these values for each.
 
 - Visualized data distributions using histograms and boxplots to confirm non-normality, supporting non-parametric methods like IQR for anomaly detection:
-<img src="images/PCA_SVM.png" alt="One-class SVM PCA" width="80%" />
+<img src="images/PCA_SVM.png" alt="One-class SVM PCA" width="50%" />
 
 
 
@@ -77,7 +78,7 @@
 - Added anomaly flags back to the dataset, verified that 2.5% were detected as anomalies.
 - PCA visualization showed one normal point far from the cluster, suggesting further investigation.
 - Advantage: requires only expected anomaly fraction, easy to implement.
-<img src="images/PCA_IsoForest.png" alt="Isolation Forest PCA" width="80%" />
+<img src="images/PCA_IsoForest.png" alt="Isolation Forest PCA" width="50%" />
 
 ## 5. Conclusions and Reflections
 
